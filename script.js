@@ -1,4 +1,9 @@
 // alert("loading")
+function addForm(){
+    window.location.href = "main.html"
+}
+
+
 function addNewWefield(){
     // console.log("Adding new field");
 

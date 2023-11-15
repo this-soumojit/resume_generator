@@ -9,15 +9,16 @@
 
 #cv-template {
     margin: 50px auto; /* Adjust the margin as needed */
-    background-color: #fff; /* Set a background color if needed */
+    background-color: rgb(18, 17, 17)b2b; /* Set a background color if needed */
     padding: 20px; /* Add padding for better appearance */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
     width: 80%; /* Adjust the width as needed */
+    border: 5px solid rgb(10, 10, 10);
   }
   
   .background {
     background-color: #007bff; /* Example background color for headers */
-    color: #fff; /* Example text color for headers */
+    color: #0e0e0e; /* Example text color for headers */
   }  
 
 .myimg{
