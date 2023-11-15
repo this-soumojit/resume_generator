@@ -7,11 +7,18 @@
 } */
 
 
-#cv-template{
-    display: none;
-
-
-}
+#cv-template {
+    margin: 50px auto; /* Adjust the margin as needed */
+    background-color: #fff; /* Set a background color if needed */
+    padding: 20px; /* Add padding for better appearance */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    width: 80%; /* Adjust the width as needed */
+  }
+  
+  .background {
+    background-color: #007bff; /* Example background color for headers */
+    color: #fff; /* Example text color for headers */
+  }  
 
 .myimg{
     border-radius: 50%;

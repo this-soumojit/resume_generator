@@ -1,5 +1,3 @@
-<!-- ak thappor  marbo -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,192 +13,186 @@
 </head>
 <body>
     <!-- html code -->
-
-  
-    <div class="container" id="cv-form">
-        <h1 class="text-center mt-2">Resume Generator</h1>
-        <p class="text-center">By Soumojit Ghosh</p>
-
-        <div class="row">
-            <div class="col-md-6">
-                <!-- first col -->
-                <h3>Personal Information</h3>
-
-                <div class="form-group">
-                    <label for="nameField">Your Name</label>
-                    <input type="text" id="nameField" placeholder="Enter here" class="form-control"/>
-
+    <div>
+        <div class="container" id="cv-form">
+            <h1 class="text-center mt-2">Resume Generator</h1>
+            <p class="text-center">By Soumojit Ghosh</p>
+    
+            <div class="row">
+                <div class="col-md-6">
+                    <!-- first col -->
+                    <h3>Personal Information</h3>
+    
+                    <div class="form-group">
+                        <label for="nameField">Your Name</label>
+                        <input type="text" id="nameField" placeholder="Enter here" class="form-control"/>
+    
+                    </div>
+                    <div class="form-group mt-2">
+                        <lable for="contactField">Your Contact</lable>
+                        <input type="contact" id="contactField" placeholder="Enter here" class="form-control">
+                    </div>
+                    <div class="form-group mt-2">
+                        <label for="birthField"> Your D-O-B </label>
+                        <input type="date" id="birthField" class="form-control">
+                    </div>
+                    <div class="form-group"></div>
+                    <div class="form-group mt-2">
+                        <label for="emailField">Your Email</label>
+                        <input type="text" id="emailField" placeholder="Enter here" class="form-control">
+                    </div>
+                    <div class="form-group mt-2">
+                        <lable for="addressField">Your Address</lable>
+                        <textarea id="addressField" placeholder="Enter here" class="form-control"b row="10"></textarea>
+                    </div>
+    
+                    <p class="text-secondary">Important Links</p>
+    
+                    <div class="form-group mt-2">
+                        <label for="fbField">Facebook</label>
+                        <input type="text" id="fbField" placeholder="Enter here" class="form-control"/>
+    
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="LinkedField">LinkedIn</label>
+                        <input type="text" id="LinkedField" placeholder="Enter here" class="form-control"/>
+    
+                    </div>
+    
+    
                 </div>
-                <div class="form-group mt-2">
-                    <lable for="contactField">Your Contact</lable>
-                    <input type="contact" id="contactField" placeholder="Enter here" class="form-control">
-                </div>
-                <div class="form-group mt-2">
-                    <label for="birthField"> Your D-O-B </label>
-                    <input type="date" id="birthField" class="form-control">
-                </div>
-                <div class="form-group"></div>
-                <div class="form-group mt-2">
-                    <label for="emailField">Your Email</label>
-                    <input type="text" id="emailField" placeholder="Enter here" class="form-control">
-                </div>
-                <div class="form-group mt-2">
-                    <lable for="addressField">Your Address</lable>
-                    <textarea id="addressField" placeholder="Enter here" class="form-control"b row="10"></textarea>
-                </div>
-
-                <p class="text-secondary">Important Links</p>
-
-                <div class="form-group mt-2">
-                    <label for="fbField">Facebook</label>
-                    <input type="text" id="fbField" placeholder="Enter here" class="form-control"/>
-
-                </div>
-
-                <div class="form-group">
-                    <label for="LinkedField">LinkedIn</label>
-                    <input type="text" id="LinkedField" placeholder="Enter here" class="form-control"/>
-
-                </div>
-
-
-            </div>
-            <div class="col-md-6">
-                <!-- second col -->
-                <h3>Proffessional Information</h3>
-
-
-                <div class="form-group mt-2">
-                    <label for="">Objective</label>
-                    <textarea id="objectiveField" rows="5" placeholder="Enter here" class="form-control"></textarea>
-                </div>
-
-                <div class="form-group mt-2" id="we">
-                    <label for="">Work Experience</label>
-                    <textarea rows="3" placeholder="Enter here" class="form-control weField"></textarea>
-
-                    <!-- new textarea -->
-
-                    <div class="container text-center m-2" id="weAddButton">
-                        <button onclick="addNewWefield()" class="btn btn-primary btn small">Add</button>
+                <div class="col-md-6">
+                    <!-- second col -->
+                    <h3>Proffessional Information</h3>
+    
+    
+                    <div class="form-group mt-2">
+                        <label for="">Objective</label>
+                        <textarea id="objectiveField" rows="5" placeholder="Enter here" class="form-control"></textarea>
+                    </div>
+    
+                    <div class="form-group mt-2" id="we">
+                        <label for="">Work Experience</label>
+                        <textarea rows="3" placeholder="Enter here" class="form-control weField"></textarea>
+    
+                        <!-- new textarea -->
+    
+                        <div class="container text-center m-2" id="weAddButton">
+                            <button onclick="addNewWefield()" class="btn btn-primary btn small">Add</button>
+                        </div>
+                    </div>
+                    <div class="'form-group mt-2" id="aq">
+                        <label for="">Academic Qualification</label>
+                        <textarea placeholder="Enter here" class="form-control aqField"></textarea>
+    
+                        <!-- new textarea -->
+    
+                        <div class="container text-center mt-2" id="aqAddButton">
+                            <button onclick="addNewAqField()" class="btn btn-primary btn small">Add</button>
+                        </div>
                     </div>
                 </div>
-                <div class="'form-group mt-2" id="aq">
-                    <label for="">Academic Qualification</label>
-                    <textarea placeholder="Enter here" class="form-control aqField"></textarea>
-
-                    <!-- new textarea -->
-
-                    <div class="container text-center mt-2" id="aqAddButton">
-                        <button onclick="addNewAqField()" class="btn btn-primary btn small">Add</button>
-                    </div>
-                </div>
             </div>
+    
+            <div class="container text-center mt-3">
+                <button onclick="generateCV()" class="btn btn-primary">Generate CV</button>
+            </div>
+    
         </div>
-
-        <div class="container text-center mt-3">
-            <button onclick="generateCV()" class="btn btn-primary">Generate CV</button>
-        </div>
-
-    </div>
-
-    <!-- cv template -->
-
-
-    <div class="container" id="cv-template">
-        <div class="row">
-            <div class="col-md-4 text-center py-5 background">
-                <!-- first col -->
-                <img src="https://campussafetyconference.com/wp-content/uploads/2020/08/iStock-476085198.jpg" 
-                alt=""
-                class="img-fluid myimg"
-                />
-
-                <div class="container">
-                    <p id="nameTemplate">Soumojit Ghosh</p>
-                    <p id="contactTemplate">+916289931848</p>
-                    <p id="birthTemplate">25-11-2004</p>
-                    <p id="emailTemplate">soumojitghosh325@gmail.com</p>
-                    <p id="addressTemplate">37/1A,Girish Mukherjee Road, Bhawanipore Kolkata-700025</p>
-               
-
-                    <hr/>
-
-                    <p>
-                        <a id="fbTemplate" href="#1">https://www.facebook.com/Soumojit Ghosh</a>
-                    </p>
-
-                    <p>
-                        <a id="linkedTemplate" href="#2">https://www.Linkedin.com/Soumojit Ghosh</a>
-                    </p>
-                </div>
-            </div>
-            <div class="col-md-8 py-5">
-                <!-- second col -->
-                <h1 id="nameTemplate2" class="text-center" style="font-weight:980">Soumojit Ghosh</h1>
-
-                <!-- Objective -->
-
-                <div class="card mt-4">
-                    <div class="card-header background">
-                        <h3>Objective</h3>
-                    </div>
-                    <div class="card-body">
-                        <p id="objTemplate">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur porro quam laudantium accusantium fuga,
-                             similique consequuntur tempora ratione, pariatur, repudiandae ex ullam doloremque. Maxime animi quo
-                              ex porro voluptas autem.
-
+    
+        <!-- cv template -->
+    
+    
+        <div class="container" id="cv-template">
+            <div class="row">
+                <div class="col-md-4 text-center py-5 background">
+                    <!-- first col -->
+                    <img src="https://campussafetyconference.com/wp-content/uploads/2020/08/iStock-476085198.jpg" 
+                    alt=""
+                    class="img-fluid myimg"
+                    />
+    
+                    <div class="container">
+                        <p id="nameTemplate">Soumojit Ghosh</p>
+                        <p id="contactTemplate">+916289931848</p>
+                        <p id="birthTemplate">25-11-2004</p>
+                        <p id="emailTemplate">soumojitghosh325@gmail.com</p>
+                        <p id="addressTemplate">37/1A,Girish Mukherjee Road, Bhawanipore Kolkata-700025</p>
+                   
+    
+                        <hr/>
+    
+                        <p>
+                            <a id="fbTemplate" href="#1">https://www.facebook.com/Soumojit Ghosh</a>
+                        </p>
+    
+                        <p>
+                            <a id="linkedTemplate" href="#2">https://www.Linkedin.com/Soumojit Ghosh</a>
                         </p>
                     </div>
                 </div>
-
-                <!-- Work experience -->
-
-                <div class="card mt-4">
-                    <div class="card-header background">
-                        <h3>Work Experience</h3>
+                <div class="col-md-8 py-5">
+                    <!-- second col -->
+                    <h1 id="nameTemplate2" class="text-center" style="font-weight:980">Soumojit Ghosh</h1>
+    
+                    <!-- Objective -->
+    
+                    <div class="card mt-4">
+                        <div class="card-header background">
+                            <h3>Objective</h3>
+                        </div>
+                        <div class="card-body">
+                            <p id="objTemplate">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur porro quam laudantium accusantium fuga,
+                                 similique consequuntur tempora ratione, pariatur, repudiandae ex ullam doloremque. Maxime animi quo
+                                  ex porro voluptas autem.
+    
+                            </p>
+                        </div>
                     </div>
-
-                    <div class="card-body">
-                        <ul id="weTemplate">
-                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, magni!</li>
-                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, magni!</li>
-                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, magni!</li>
-                        </ul>
+    
+                    <!-- Work experience -->
+    
+                    <div class="card mt-4">
+                        <div class="card-header background">
+                            <h3>Work Experience</h3>
+                        </div>
+    
+                        <div class="card-body">
+                            <ul id="weTemplate">
+                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, magni!</li>
+                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, magni!</li>
+                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, magni!</li>
+                            </ul>
+                        </div>
+                    </div>
+    
+                    <!-- academic qualification -->
+    
+                    <div class="card mt-4">
+                        <div class="card-header background">
+                            <h3>Academic Qualification</h3>
+                        </div>
+    
+                        <div class="card-body">
+                            <ul id="aqTemplate">
+                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, magni!</li>
+                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, magni!</li>
+                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, magni!</li>
+                            </ul>
+                        </div>
+                    </div>
+    
+    
+                    <div class="container mt-3 text-center">
+                        <button onclick="printCV()" class="btn background">
+                            Print CV
+                        </button>
                     </div>
                 </div>
-
-                <!-- academic qualification -->
-
-                <div class="card mt-4">
-                    <div class="card-header background">
-                        <h3>Academic Qualification</h3>
-                    </div>
-
-                    <div class="card-body">
-                        <ul id="aqTemplate">
-                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, magni!</li>
-                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, magni!</li>
-                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, magni!</li>
-                        </ul>
-                    </div>
-                </div>
-
-
-                <div class="container mt-3 text-center">
-                    <button onclick="printCV()" class="btn background">
-                        Print CV
-                    </button>
-                </div>
-
-
-
-
-
-
             </div>
+    
         </div>
-
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
