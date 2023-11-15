@@ -29,3 +29,10 @@
 .background{
     background-color:aqua;
 }
+
+body {
+    background-image: url('https://images.unsplash.com/photo-1485988412941-77a35537dae4?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8cmVzdW1lfGVufDB8fDB8fHww');
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+        
