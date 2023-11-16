@@ -3,7 +3,7 @@
 //     window.location.href = "main.html"
 // }
 function redirectToGenerator() {
-    windows.location.href = "main.html"
+    window.location.href = "main.html";
 }
 
 

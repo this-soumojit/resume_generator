@@ -1,13 +1,3 @@
-/* body{
-    background-color: red;
-} */
-
-/* #cv-form{
-    display:none;
-}  */
-
-
-
 #cv-template {
     margin: 50px auto;
     background-color: rgb(18, 17, 17)b2b;
@@ -16,6 +6,11 @@
     width: 80%;
     border: 5px solid rgb(10, 10, 10);
     display: none;
+}
+
+#cv-form{
+    /* display: none; */
+    padding-bottom: 5%;
 }
 
 .background {
@@ -38,13 +33,9 @@
 }
 
 #facebookLogo {
-
     margin: 20px;
     width: 30px;
     height: auto;
-
-
-
 }
 
 #logo {
@@ -96,12 +87,10 @@
 
 #headId {
     background-color: #3498db;
-    color: #fff;
-    padding: 20px;
+    color: white;
+    padding: 60px;
     text-align: center;
 }
-
-
 
 #mText {
     position: absolute;
