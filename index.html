@@ -1,33 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css" />
+
     <title>Resume Generator</title>
     <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f5f5f5;
-            margin: 0;
-            padding: 0;
-        }
-
-        header {
-            background-color: #3498db;
-            color: #fff;
-            text-align: center;
-            padding: 20px;
-        }
-
-        section {
-            max-width: 800px;
-            margin: 30px auto;
-            padding: 20px;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
-        }
-
         h1 {
             color: #3498db;
         }
@@ -37,37 +20,45 @@
             color: #555;
         }
 
-        button {
-            display: block;
-            margin: 20px auto;
-            padding: 10px 20px;
-            font-size: 16px;
-            background-color: #3498db;
-            color: #fff;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            text-align: center;
+
+
+
+
         }
     </style>
 </head>
+
 <body>
-    <header>
-        
+    <div class="moving-text" id="mText">!!!!!!!!Your job is going away because of your boring resume ,Hurry Up!!!!!!!!
+    </div>
+    <header id="headId">
+
+
         <h1>Resume Generator</h1>
         <p>Create a professional resume in minutes!</p>
     </header>
 
-    <section>
+    <section id="sId">
         <h2>Welcome to Resume Generator</h2>
-        <p>Build a stunning resume that showcases your skills and experiences. Stand out from the crowd with a professionally designed CV.</p>
-        <button onclick="redirectToGenerator()">Get Started</button>
+        <p>Build a stunning resume that showcases your skills and experiences. Stand out from the crowd with a
+            professionally designed CV.</p>
+        <button id="form" onclick="redirectToGenerator()">Get Started</button>
     </section>
 
-    <script>
-        function redirectToGenerator() {
-            // Redirect to the actual resume generator page
-            window.location.href = "main.html";
-        }
-    </script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+
 </body>
+
 </html>

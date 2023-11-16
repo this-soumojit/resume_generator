@@ -9,40 +9,45 @@
 
 
 #cv-template {
-    margin: 50px auto; 
+    margin: 50px auto;
     background-color: rgb(18, 17, 17)b2b;
-    padding: 20px; 
+    padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 80%; 
+    width: 80%;
     border: 5px solid rgb(10, 10, 10);
-    display:none;
-  }
-  
-  .background {
-    background-color: #007bff; /* Example background color for headers */
-    color: #0e0e0e; /* Example text color for headers */
-  }  
+    display: none;
+}
 
-.myimg{
-    width: 150px; /* Set your desired width */
-    height: 150px; /* Set your desired height */
+.background {
+    background-color: #007bff;
+    /* Example background color for headers */
+    color: #0e0e0e;
+    /* Example text color for headers */
+}
+
+.myimg {
+    width: 150px;
+    /* Set your desired width */
+    height: 150px;
+    /* Set your desired height */
     border-radius: 50%;
 }
 
-.background{
-    background-color:aqua;
+.background {
+    background-color: aqua;
 }
 
-#facebookLogo{
-    
+#facebookLogo {
+
     margin: 20px;
-    width:30px;
-    height:auto;
-    
-   
+    width: 30px;
+    height: auto;
+
+
 
 }
-#logo{
+
+#logo {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -50,20 +55,68 @@
     text-align: center;
 }
 
-#linkedinlogo{
-    
+#linkedinlogo {
+
     margin: 20px;
-    width:30px;
-    height:auto;
+    width: 30px;
+    height: auto;
 }
-#social{
+
+#social {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-#colorofButt{
+
+#colorofButt {
     background-color: #3498db;
+}
+
+#form {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#sId {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+
+}
+
+#headId {
+    background-color: #3498db;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
 }
 
 
 
+#mText {
+    position: absolute;
+    font-size: 24px;
+    color: #0b0b0b;
+    animation: moveText 14s linear infinite;
+}
+
+@keyframes moveText {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(100%);
+    }
+
+}
