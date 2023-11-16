@@ -52,11 +52,42 @@ function generateCV(){
 
     document.getElementById("emailTemplate").innerHTML=document.getElementById("emailField").value;
 
+    var input = document.getElementById('imageField');
+    var preview = document.getElementById('proTemp');
+
+    var file = input.files[0];
+    if (file) {
+        var reader = new FileReader();
+
+        reader.onload = function (e) {
+            preview.src = e.target.result;
+            // preview.style.display = 'block';
+        };
+
+        reader.readAsDataURL(file);
+    }
+
+    document.getElementById("birthTemplate").innerHTML=document.getElementById("birthField").value;
+
     document.getElementById("addressTemplate").innerHTML=document.getElementById("addressField").value;
 
-    document.getElementById("fbTemplate").innerHTML=document.getElementById("fbField").value;
+    var linkedField = document.getElementById('LinkedField').value;
+    var lidynamicLink = document.getElementById('lidynamicLink');
 
-    document.getElementById("linkedTemplate").innerHTML=document.getElementById("LinkedField").value;
+    // Set the href attribute of the anchor tag
+    lidynamicLink.href = linkedField;
+
+
+    document.getElementById('fbdynamicLink').href=document.getElementById('fbField').value;
+
+
+
+
+
+
+    // document.getElementById("fbTemplate").innerHTML=document.getElementById("fbField").value;
+
+    // document.getElementById("linkedTemplate").innerHTML=document.getElementById("LinkedField").value;
 
     
     document.getElementById("objTemplate").innerHTML=document.getElementById("objectiveField").value;
